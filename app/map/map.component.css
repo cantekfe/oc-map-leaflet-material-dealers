@@ -1,0 +1,24 @@
+.myCard{
+    position:relative;
+  }
+  #map{
+    margin: 2%;
+    height:90%;
+    width:90%;
+    position:relative;}
+.container {
+  min-height: 50%;
+  width: 100%;
+}
+mat-card-content{
+   height:100%;
+    width:100%;
+}
+mat-card-header mat-card-title{
+  margin: 0px;
+  padding: 0px;
+  text-align: left;
+}
+.mat-accent .mat-pseudo-checkbox-checked, .mat-accent .mat-pseudo-checkbox-indeterminate, .mat-pseudo-checkbox-checked, .mat-pseudo-checkbox-indeterminate{
+  background-color: lightblue !important;
+}
