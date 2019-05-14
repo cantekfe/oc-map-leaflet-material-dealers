@@ -1,0 +1,24 @@
+<div class="container" fxLayout fxLayoutWrap fxLayoutGap="0.5%" fxLayoutAlign="center">
+	<mat-card class="myCard" fxFlex="70%">
+		<mat-card-header>
+			<mat-card-title>
+				{{caption}}
+			</mat-card-title>
+		</mat-card-header>
+		<mat-card-content>
+			<div id="map"></div>
+		</mat-card-content>
+	</mat-card>
+
+	<mat-card class="myCard" fxFlex="30%">
+		<mat-selection-list #company [(ngModel)]="selectedOptions" (ngModelChange)="onNgModelChange($event)">
+			<mat-list-option  *ngFor="let c of dealers" [value]="c.id">
+				{{c.name}}
+			</mat-list-option>
+		</mat-selection-list>
+		<p>
+			Options selected: {{company.selectedOptions.selected.length}}
+      {{test}}
+		</p>
+	</mat-card>
+</div>
