@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import L from 'leaflet';
-import '@elfalem/leaflet-curve';
+import * as L from "leaflet";
+import 'leaflet-curve';
 @Injectable()
 export class MapHelperService {
   public map;

@@ -1,9 +1,15 @@
 import { Input, Component, OnInit, AfterViewInit } from '@angular/core';
 import { LocationProviderService } from '../services/location-provider.service';
 import { MapHelperService } from '../services/map-helper.service';
+import { ToolboxComponent } from "../toolbox-decorator";
 
+@ToolboxComponent({
+  desc: " Map",
+  icon: "fa fa-chart-bar",
+  componentName: "MapComponent"
+})
 @Component({
-  selector: 'map-cmp',
+  selector: 'pack-map-container',
   templateUrl: './map.component.html',
   styleUrls: ['./map.component.css'],
   providers: [MapHelperService]

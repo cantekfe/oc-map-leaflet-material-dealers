@@ -1,4 +1,4 @@
-.myCard {
+.c-myCard {
     position: relative;
 }
 
@@ -9,17 +9,17 @@
     position: relative;
 }
 
-.container {
+.c-container {
     min-height: 50%;
     width: 100%;
 }
 
-mat-card-content {
+.c-content {
     height: 100%;
     width: 100%;
 }
 
-mat-card-header mat-card-title {
+.c-header mat-card-title {
     margin: 0px;
     padding: 0px;
     text-align: left;

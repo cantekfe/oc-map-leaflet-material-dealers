@@ -9,7 +9,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 @NgModule({
   imports: [ BrowserModule, FormsModule, MatCardModule,MatListModule,FlexLayoutModule  ],
   declarations: [ 
-    MapComponent,
+    MapComponent
      ],
   providers:[LocationProviderService],   
   exports: [MapComponent]
